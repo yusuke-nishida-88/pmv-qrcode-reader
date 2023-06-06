@@ -1,39 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="index.css" />
-    <title>PMV Sharing App</title>
-  </head>
-  <body>
-    <script charset="utf-8" src="https://static.line-scdn.net/liff/edge/2/sdk.js"></script>
-    <script>
-      liff
-        .init({
-          liffId: "1661178769-QELpevEK",
-        })
-        .then(() => {
-          liff.scanCodeV2().then(result => {
-            const stringifiedResult = result.value;
-              liff
-                .sendMessages([
-                  {
-                    'type': 'text',
-                    'text': stringifiedResult,
-                  },
-                ])
-                .then(() => {
-                  liff.closeWindow();
-                })
-                .catch((error) => {
-                  window.alert('Error sending message: ' + error);
-                });
-          }).catch(err => {
-            window.alert('scanCode failed!');
-          });
-        });
-    </script>
-  </body>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>QRコードリーダー</title>
+    </head>
+    <body>
+        <script src="https://static.line-scdn.net/liff/edge/2/sdk.js"></script>
+        <script src="qrscan.js"></script>
+    </body>
 </html>

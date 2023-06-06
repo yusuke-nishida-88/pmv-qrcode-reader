@@ -1,7 +1,7 @@
 window.onload = function() {
   liff
   .init({
-      liffId: "1661178769-QELpevEK"
+      liffId: "1661178769-pwmMGL6x"
   })
   .then(() => {
       liff.scanCodeV2().then(result => {

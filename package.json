@@ -2,6 +2,8 @@
   "name": "liff-starter-vanilla",
   "version": "0.1.0",
   "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "LIFF_ID='1661178769-QELpevEK' cross-env NODE_ENV=development webpack-dev-server --progress",
     "build": "cross-env NODE_ENV=production webpack"
   },

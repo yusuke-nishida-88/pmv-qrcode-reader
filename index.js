@@ -9,14 +9,17 @@ window.onload = function() {
             liff.sendMessages([{
                 'type': 'text',
                 'text': stringifiedResult
-            }])
+            }]).then(() => {
+                window.alert('右上の[×]を押してトーク画面にお戻りください');
+                liff.closeWindow();
+            }).catch((error) => {
+                window.alert('Error sending message: ' + error);
+            });
         }).catch(err => {
             window.alert('scanCode failed!');
         });
     })
-    .then(() => {
-        liff.closeWindow();
-    }).catch((error) => {
-        window.alert('Error sending message: ' + error);
+    .catch((err) => {
+        window.alert('Something went wrong with LIFF initialization.');
     });
-}
+  }

@@ -1,4 +1,4 @@
-window.onload = function() {
+window.onload = function OnButtonClick() {
     liff
     .init({
         liffId: "1661178769-pwmMGL6x"

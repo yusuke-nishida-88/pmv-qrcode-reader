@@ -3,9 +3,18 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>PMV Sharing QRcode Reader</title>
+        <script language="javascript" type="text/javascript">
+        function OnButtonClick() {
+            target = document.getElementById("output");
+            target.innerHTML = "Penguin";
+        }
+    </script>
     </head>
     <body>
         <script src="https://static.line-scdn.net/liff/edge/2/sdk.js"></script>
         <script src="index.js"></script>
+        <input type="button" value="Exec" onclick="OnButtonClick();"/><br />
+        <br />
+        <div id="output"></div>
     </body>
 </html>

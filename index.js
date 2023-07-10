@@ -1,4 +1,4 @@
-OnButtonClick() {
+function OnButtonClick() {
     window.onload = function() {
         liff
         .init({

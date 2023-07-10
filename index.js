@@ -1,5 +1,4 @@
 function OnButtonClick() {
-    window.onload = function() {
         liff
         .init({
             liffId: "1661178769-pwmMGL6x"
@@ -22,5 +21,4 @@ function OnButtonClick() {
         .catch((err) => {
             window.alert('Something went wrong with LIFF initialization.');
         });
-      }
 }

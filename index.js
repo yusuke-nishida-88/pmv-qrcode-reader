@@ -8,6 +8,7 @@ window.onload = function() {
         const idToken = liff.getDecodedIDToken();
         console.log(idToken)
         }
+    }
     }).catch((err) => {
         console.log('error')
     });

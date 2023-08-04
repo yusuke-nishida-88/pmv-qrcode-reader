@@ -6,7 +6,7 @@ window.onload = function() {
     .then(() => {
         if (liff.isLoggedIn()) {
         const idToken = liff.getDecodedIDToken();
-        console.log(idToken)
+        console.log(idToken);
         }
     }).catch((err) => {
         console.log('error')
